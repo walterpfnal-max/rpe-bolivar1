@@ -2,24 +2,35 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-# Configuración de la página
+# 1. Configuración de la página
 st.set_page_config(page_title="Control RPE - Club Bolívar", page_icon="⚽", layout="centered")
+
+# URL del escudo oficial del Club Bolívar
+LOGO_URL = "https://clubbolivar.com/wp-content/uploads/2023/05/logo-750x750-1.png"
+
+# 2. Insertar Escudo Centrado y Título
+col1, col2, col3 = st.columns([1, 1.5, 1])
+with col2:
+    st.image(LOGO_URL, width=180)
+
+st.markdown("<h1 style='text-align: center; color: #1E90FF; margin-top: -10px;'>🔵 Club Bolívar</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; margin-top: -15px;'>Control de Carga Interna (RPE)</h3>", unsafe_allow_html=True)
+st.write("---")
 
 # ID de tu Google Sheets verificado
 SHEET_ID = "1GTPovT6jXqDwR_u172XHvSKUhXByDT17Ii0EpVnx1Ac"
 
-st.title("🔵 Club Bolívar - Control de Carga")
-st.markdown("### Registro Diario de Carga Interna (RPE)")
-
-# Lista del Plantel Profesional
+# 3. Plantel Profesional Actualizado (puedes agregar o quitar nombres aquí)
 jugadores = [
-    "Francisco Chaverra", "Carlos Lampe", "Leonel Justiniano", 
-    "Ramiro Vaca", "Patito Rodríguez", "Bruno Sávio", 
-    "Fábio Gomes", "Jhon Velasco", "Yomar Rocha", "Jesús Sagredo"
+    "Carlos Lampe", "Rubén Cordano", "Diego Méndez", 
+    "Jesús Sagredo", "José Sagredo", "Xavier Arreaga", "Anderson Ordóñez", 
+    "Leonel Justiniano", "Ramiro Vaca", "Erwin Saavedra", "Robson Matheus", 
+    "Carlos Melgar", "Patito Rodríguez", "Bruno Sávio", "Braian Oyola", 
+    "Fábio Gomes", "Dorny Romero", "Lucas Chávez", "Jhon Velásquez", "Yomar Rocha"
 ]
-jugadores.sort()
+jugadores.sort() # Los ordena alfabéticamente de forma automática
 
-# Formulario para el jugador
+# 4. Formulario para el jugador
 with st.form("rpe_form", clear_on_submit=True):
     nombre = st.selectbox("1. Selecciona tu Nombre:", jugadores)
     
@@ -29,7 +40,7 @@ with st.form("rpe_form", clear_on_submit=True):
     
     duracion = st.number_input("3. Duración de la sesión (minutos):", min_value=1, max_value=240, value=90)
     
-    obs = st.text_input("4. Observaciones / Molestias (Opcional):", placeholder="Ej: Dolor de cabeza por altura, carga en gemelo...")
+    obs = st.text_input("4. Observaciones / Molestias (Opcional):", placeholder="Ej: Carga en gemelo izquierdo...")
     
     enviar = st.form_submit_button("Enviar Reporte 🚀")
 
