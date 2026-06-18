@@ -22,11 +22,12 @@ SHEET_ID = "1GTPovT6jXqDwR_u172XHvSKUhXByDT17Ii0EpVnx1Ac"
 
 # 3. Plantel Profesional Actualizado (puedes agregar o quitar nombres aquí)
 jugadores = [
-    "Carlos Lampe", "Rubén Cordano", "Diego Méndez", 
-    "Jesús Sagredo", "José Sagredo", "Xavier Arreaga", "Anderson Ordóñez", 
-    "Leonel Justiniano", "Ramiro Vaca", "Erwin Saavedra", "Robson Matheus", 
-    "Carlos Melgar", "Patito Rodríguez", "Bruno Sávio", "Braian Oyola", 
-    "Fábio Gomes", "Dorny Romero", "Lucas Chávez", "Jhon Velásquez", "Yomar Rocha"
+    "Carlos Lampe", "Juan Jose Lopez", "Diego Méndez", 
+    "Jesús Sagredo", "José Sagredo", "Xavier Arreaga", "Santiago Echeverria", 
+    "Leonel Justiniano", "Ervin Vaca", "Erwin Saavedra", "Robson Matheus", 
+    "Carlos Melgar", "Patito Rodríguez", "Fernando Mena", "Escleizon Freita", 
+    "Luis Paz", "Dorny Romero", "Lucas Chávez", "Jhon Velásquez", "Martin Cauteruccio",  
+    "Jhon Garcia", Cristian Lopez", "Anderson Ayhuana", "Matias Galindo", "Jesus Velasquez"
 ]
 jugadores.sort() # Los ordena alfabéticamente de forma automática
 
