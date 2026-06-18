@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from gspread_dataframe import set_with_dataframe
+
 import gspread
 from google.oauth2.service_account import Credentials
 
