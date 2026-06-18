@@ -27,7 +27,7 @@ jugadores = [
     "Leonel Justiniano", "Ervin Vaca", "Erwin Saavedra", "Robson Matheus", 
     "Carlos Melgar", "Patito Rodríguez", "Fernando Mena", "Escleizon Freita", 
     "Luis Paz", "Dorny Romero", "Lucas Chávez", "Jhon Velásquez", "Martin Cauteruccio",  
-    "Jhon Garcia", Cristian Lopez", "Anderson Ayhuana", "Matias Galindo", "Jesus Velasquez"
+    "Jhon Garcia", "Cristian Lopez", "Anderson Ayhuana", "Matias Galindo", "Jesus Velasquez"
 ]
 jugadores.sort() # Los ordena alfabéticamente de forma automática
 
